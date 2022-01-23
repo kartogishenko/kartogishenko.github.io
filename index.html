@@ -1,8 +1,34 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Testsite</title>
-	</head>
-	<body>
-		<h1>Testsite</h1>
-	</body>
+<head>
+	
+	<title>Sj&ouml;bo Bussregistrering</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <script src="js/leaflet.js"></script>
+    <script src="https://unpkg.com/esri-leaflet@3.0.4/dist/esri-leaflet.js" integrity="sha512-oUArlxr7VpoY7f/dd3ZdUL7FGOvS79nXVVQhxlg6ij4Fhdc4QID43LUFRs7abwHNJ0EYWijiN5LP2ZRR2PY4hQ==" crossorigin=""></script>
+    
+
+
+
+</head>
+<body>
+    <div id='map'></div>
+    <div class="btns">
+        <input type="button" class="btn" value="Track" id="onoff" onclick = "toggle_tracker()">
+        <input type="button" class="btn" value="Logg" onclick = "log_position()">
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
 </html>
